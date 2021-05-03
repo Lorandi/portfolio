@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <link rel="stylesheet" href="./main.css" />
+ 
+  
 
   <title>Rodrigo Lorandi</title>
 </head>
 
 <body>
   <div class="main">
-    <h1 align="center">Olá, sou o Rodrigo Lorandi 😉</h1>
-    <h3 align="center">Desenvolvedor Front-end | Administrador e Empreendedor </h3>
+    <div class="perfil">
+        <img src="./images/perfil.jpg" alt="foto perfil" id="foto-perfil" />
+        <div id="texto-perfil">
+          <h1 >Olá, sou o Rodrigo Lorandi 😉</h1>  <hr id='hr-perfil'/>                           
+          <h2 >Desenvolvedor Front-end | Administrador e Empreendedor </h2>
+          <button id="botao" onClick="somarResultado()">Botão</button>
+          <h3 id="resultado"></h3>
+        </div>   
+    </div>
+  
     <hr />
 
     <h2> Um pouco sobre mim... </h2>
@@ -76,34 +87,34 @@
     <!-- Portfolio Gallery Grid -->
     <div class="row">
       <div class="column">
-        <div class="content">
-          <h4>ToDo List</h4>
-          <a href="./toDo/index.html">
+        <div class="content" title="toDo">
+          <h4 id="nomeSite">ToDo List</h4>
+          <a href="./toDo/index.html" target="_blank">
             <img src="./images/toDo.jpg" alt="ToDo" style="width: 100%" />
           </a>
 
         </div>
       </div>
       <div class="column">
-        <div class="content">
-          <h4>Podcastr</h4>
-          <a href="./podcastr/index.html">
+        <div class="content" title="PodCastr">
+          <h4>PodCastr</h4>
+          <a href="./podcastr/index.html" target="_blank">
             <img src="./images/podcastr.jpg" alt="Podcastr" style="width: 100%" />
           </a>
         </div>
       </div>
       <div class="column">
-        <div class="content">
+        <div class="content" title="Barbearia">
           <h4>Barbearia</h4>
-          <a href="./barbearia/index.html">
+          <a href="./barbearia/index.html" target="_blank">
             <img src="./images/barbearia.jpg" alt="Podcastr" style="width: 100%" />
           </a>
         </div>
       </div>
       <div class="column">
-        <div class="content">
+        <div class="content" title="Job Calculator">
           <h4>Job Calculator</h4>
-          <a href="./jobCalc/index.html">
+          <a href="./jobCalc/index.html" target="_blank">
             <img src="./images/jobCalc.jpg" alt="JobCalc" style="width: 100%" />
           </a>
         </div>
@@ -111,32 +122,37 @@
     </div>
 
     <h2> Onde me achar 🌐</h2>
-    <a href="https://www.linkedin.com/in/rodrigo-lorandi/" target='_blank'>
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&"
+    <div >
+      <a href="https://www.linkedin.com/in/rodrigo-lorandi/" target='_blank'>
+      <img class="contato" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&"
         alt="Linkedin">
     </a>
     <a href="https://github.com/Lorandi" target='_blank'>
-      <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&"
+      <img class="contato" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&"
         alt="Github">
     </a>
     <a href="https://discord.com/channels/Lorandi#5181" target='_blank'>
-      <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white&"
+      <img class="contato" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white&"
         alt="Discord">
     </a>
     <a href="https://www.facebook.com/RodrigoLorandi" target='_blank'>
-      <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&"
+      <img class="contato" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white&"
         alt="Facebook">
     </a>
     <a href="https://api.whatsapp.com/send?l=pt_BR&phone=+5551992892420" target='_blank'>
-      <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&"
+      <img class="contato" src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&"
         alt="Whatsapp">
     </a>
+    </div>
+    
     <br>
 
     <h2>E mais...⌨️ </h2>
     <a href="https://app.rocketseat.com.br/me/rodrigo-lorandi-07910">Rocketseat</a>
     <a href="https://www.codewars.com/users/Lorandi">Codewars</a>
   </div>
+  <script src="./js/index.js"></script>
+  </script>
 </body>
 
 </html>
